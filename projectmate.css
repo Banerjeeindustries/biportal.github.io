@@ -21,3 +21,13 @@ header{
 		   background-position: 0% 50%
 		}
 	}
+	input[type="button"] {
+		width: 660px;
+		height: 35px;
+		margin-top: 20px;
+		border: none;
+		background-color: #49c1a2;
+		color: white;
+		font-size: 18px;
+	  }
+	 
