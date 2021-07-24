@@ -86,85 +86,95 @@ nav .start-home,a:nth-child(5):hover~.animation{
 	width: 200px;
 	left: 690px;
 }
-footer {
-display: flex;
-flex-flow: row wrap;
-padding: 50px;
-color: #fff;
-background-color: #24aa94;
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-footer > * {
-flex:  1 100%;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
-
-l-footer {
-margin-right: 1.25em;
-margin-bottom: 2em;
+footer{
+    background: #222;
+    color: #fff;
+    padding: 60px 0;
 }
-
-h2 {
-font-weight: 400;
-font-size: 15px;
+.container{
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
-
-footer ul {
-list-style: none;
-padding-left: 0;
+li{
+    list-style: none;
+    line-height: 2;
 }
-
-footer li {
-line-height: 2em;
+a{
+    text-decoration: none;
+    color: #ccc;
 }
-
-footer a {
-text-decoration: none;
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
-
-r-footer {
-display: flex;
-flex-flow: row wrap;
+.items{
+    flex-basis: 20%;
 }
-
-r-footer > * {
-flex: 1 50%;
-margin-right: 1.25em;
+.items .logo{
+    text-transform: capitalize;
+    font-size: 1.4em;
+    color: #b6b6b6;
 }
-
-box a {
-color: #999;
+.items p{
+    margin: 1.2em 0;
 }
-
-h-box {
-column-count: 2;
-column-gap: 1.25em;
+.social{
+    display: flex;
 }
-
-b-footer {
-text-align: center;
-color: #999;
-padding-top: 50px;
+.social a{
+    height: 30px;
+    width: 30px;
+    background: #383535;
+    border-radius: 5px;
+    margin:10px 5px;
+    text-align: center;
 }
-
-l-footer p {
-padding-right: 20%;
-color: #999;
-}   
-
-@media screen and (min-width: 600px) {
-r-footer > * {
-flex: 1;
+.social a i{
+    font-size: 1.3em;
+    line-height: 30px;
 }
-
-features {
-flex-grow: 2;
+.items h3{
+    position: relative;
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+    color: aliceblue;
 }
-
-l-footer {
-flex: 1 0px;
+.items h3::after{
+    content:"";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    bottom: -4px;
+    left: 0;
 }
-
-r-footer {
-flex: 2 0px;
+hr{
+    opacity: .3;
+}
+footer .end{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+@media (max-width:640px){
+    .items{
+    flex-basis: 80%;
+    margin: auto;
+}
+P{
+    color: cornsilk;
 }
 }
