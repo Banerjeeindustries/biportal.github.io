@@ -24,6 +24,7 @@ body	{
 nav{
 	position: relative;
 	margin: 10px auto 0;
+	bottom-margin:10px;
 	width: 900px;
 	height: 50px;
 	background: #34495e;
